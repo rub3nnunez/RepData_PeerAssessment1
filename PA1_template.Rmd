@@ -117,8 +117,6 @@ mean_by_day <- monitoring %>% group_by(date) %>% summarize(mean_steps = mean(ste
 p <- ggplot(mean_by_day, aes(x = date, y = mean_steps)) + geom_line() + 
         ggtitle("Mean Steps by Date") + xlab("Date") + ylab("Mean Steps")
 
-p <- ggplotly(p)
-
 p
 
 ```
